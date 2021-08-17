@@ -1,0 +1,81 @@
+/* Global */
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-dark-white: #f1f3f4;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #c7c7c7;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  cursor: default;
+  background-color: var(--color-dark-white);
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+i {
+  padding-right: 24px;
+}
+/**/
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  height: 100vh;
+  margin: auto;
+  flex: 1;
+  background-color: var(--color-white);
+}
+
+.navbar {
+  flex-basis: 18%;
+  padding: 0 24px;
+}
+.navbar__tab {
+  margin: 24px 0;
+}
+.navbar__item {
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--color-grey);
+}
+.contents {
+  flex-basis: 82%;
+  padding: 24px;
+  background-color: pink;
+}
