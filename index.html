@@ -11,20 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/839bd01a18.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/style.css" />
-    <script src="main.ts" defer></script>
+    <script type="module" src="./dist/app.js" defer></script>
   </head>
   <body>
     <div class="container">
       <nav class="navbar">
         <h1>Motion</h1>
         <ul class="navbar__tab">
-          <li class="navbar__item active"><i class="far fa-image"></i>Image</li>
-          <li class="navbar__item"><i class="fas fa-camera"></i>Video</li>
-          <li class="navbar__item"><i class="far fa-sticky-note"></i>Note</li>
-          <li class="navbar__item"><i class="fas fa-tasks"></i>Task</li>
+          <li id="new-image" class="navbar__item"><i class="far fa-image"></i>Image</li>
+          <li id="new-video" class="navbar__item"><i class="fas fa-camera"></i>Video</li>
+          <li id="new-note" class="navbar__item"><i class="far fa-sticky-note"></i>Note</li>
+          <li id="new-todo" class="navbar__item"><i class="fas fa-tasks"></i>Todo</li>
         </ul>
       </nav>
-      <section class="contents">contents</section>
+      <main class="contents">contents</main>
     </div>
   </body>
 </html>

@@ -31,6 +31,7 @@ body {
   margin: 0;
   cursor: default;
   background-color: var(--color-dark-white);
+  height: 100vh;
 }
 
 ul {
@@ -58,8 +59,8 @@ i {
 .container {
   display: flex;
   flex-direction: row;
-  width: 1200px;
-  height: 100vh;
+  max-width: 1200px;
+  height: 100%;
   margin: auto;
   flex: 1;
   background-color: var(--color-white);
@@ -93,6 +94,7 @@ i {
 
 .contents {
   flex-basis: 82%;
+  flex-shrink: 1;
   padding: 24px;
   background-color: pink;
 }
