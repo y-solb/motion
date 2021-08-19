@@ -48,9 +48,12 @@ button {
   outline: none;
   padding: 0;
 }
+
 i {
   padding-right: 24px;
+  font-size: 20px;
 }
+
 /**/
 .container {
   display: flex;
@@ -66,14 +69,28 @@ i {
   flex-basis: 18%;
   padding: 0 24px;
 }
+
 .navbar__tab {
   margin: 24px 0;
 }
+
 .navbar__item {
   padding: 10px 0;
   font-size: 16px;
   color: var(--color-grey);
+  cursor: pointer;
 }
+
+.navbar__item.active {
+  color: var(--color-black);
+  background-color: blueviolet;
+}
+
+.navbar__item:hover {
+  color: var(--color-black);
+  font-weight: 600;
+}
+
 .contents {
   flex-basis: 82%;
   padding: 24px;
