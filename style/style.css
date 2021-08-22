@@ -93,6 +93,7 @@ i {
 }
 
 .contents {
+  overflow-y: auto;
   flex-basis: 82%;
   flex-shrink: 1;
   padding: 24px;
