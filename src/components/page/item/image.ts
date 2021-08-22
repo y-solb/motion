@@ -6,14 +6,14 @@ export class ImageComponent extends BaseComponent<HTMLElement> {
           <div class="img__holder">
           <img class="img__thumbnail" />
           </div>
-          <p class="img__title"></p>
+          <h2 class="img__title"></h2>
           </section>`);
 
     const imgElement = this.element.querySelector('.img__thumbnail')! as HTMLImageElement;
     imgElement.src = url;
     imgElement.alt = title;
 
-    const titleElement = this.element.querySelector('.img__title')! as HTMLParagraphElement;
+    const titleElement = this.element.querySelector('.img__title')! as HTMLHeadingElement;
     titleElement.textContent = title;
   }
 }
