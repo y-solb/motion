@@ -1,26 +1,27 @@
+import { Component } from './components/component';
 import { TodoComponent } from './components/page/item/todo.js';
 import { NoteComponent } from './components/page/item/note.js';
 import { ImageComponent } from './components/page/item/image.js';
-import { PageComponent } from './components/page/page.js';
+import { Composable, PageComponent } from './components/page/page.js';
 import { VideoComponent } from './components/page/item/video.js';
 
 class App {
-  private readonly page: PageComponent;
+  private readonly page: Component & Composable;
   constructor(appRoot: HTMLElement) {
     this.page = new PageComponent();
     this.page.attachTo(appRoot);
 
     const img = new ImageComponent('Image HELLO', 'https://picsum.photos/seed/picsum/200/300');
-    img.attachTo(appRoot, 'beforeend');
+    this.page.addChild(img);
 
     const note = new NoteComponent('Here is title', 'And content!');
-    note.attachTo(appRoot, 'beforeend');
+    this.page.addChild(note);
 
     const todo = new TodoComponent('Todo List', 'study typescript');
-    todo.attachTo(appRoot, 'beforeend');
+    this.page.addChild(todo);
 
     const video = new VideoComponent('Video title', 'https://www.youtube.com/watch?v=-dowcmrcRYc&t=283s');
-    video.attachTo(appRoot, 'beforeend');
+    this.page.addChild(video);
   }
 }
 
