@@ -3,7 +3,7 @@ import { BaseComponent } from './../../component.js';
 
 export class MediaInput extends BaseComponent<HTMLElement> implements MediaData {
   constructor() {
-    super(`<div>
+    super(`<div class="input__container">
             <div class="form__container">
                 <label for="title">Title</label>
                 <input type="text" id="title" />
@@ -12,7 +12,7 @@ export class MediaInput extends BaseComponent<HTMLElement> implements MediaData 
                 <label for="url">URL</label>
                 <input type="text" id="url" />
             </div>
-        </div>
+          </div>
     `);
   }
   get title(): string {
