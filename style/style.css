@@ -228,3 +228,26 @@ label {
   width: 12px;
   margin-right: 6px;
 }
+
+/* drag and drop */
+.mute-children * {
+  pointer-events: none;
+}
+
+.lifted {
+  animation: drag_start 250ms;
+  opacity: 0.2;
+}
+
+@keyframes drag_start {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.dropped {
+  border: 2px solid blue;
+}
